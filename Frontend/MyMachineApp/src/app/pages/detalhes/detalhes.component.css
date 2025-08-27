@@ -1,0 +1,82 @@
+    .detalhes-container {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1.5rem;
+      background-color: #f9f9f9;
+    }
+
+    .card-item {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .card-item strong {
+      color: #333;
+    }
+
+    .back-button {
+      display: block;
+      width: 200px;
+      text-align: center;
+      margin: 2rem auto 0;
+      padding: 12px 20px;
+      background-color: #6c757d;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+
+    .back-button:hover {
+      background-color: #5a6268;
+    }
+
+    .status-operando {
+      color: white;
+      background-color: #28a745;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .status-parapara-manutencao {
+      color: white;
+      background-color: #ffc107;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .status-desligada {
+      color: white;
+      background-color: #dc3545;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .loading-message {
+      text-align: center;
+      margin-top: 2rem;
+      color: #888;
+      font-style: italic;
+    }
+    

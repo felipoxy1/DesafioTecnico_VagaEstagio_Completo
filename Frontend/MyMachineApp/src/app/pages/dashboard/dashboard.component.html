@@ -1,0 +1,36 @@
+<div class="dashboard-container">
+  <h2>Dashboard de Máquinas</h2>
+  <div class="controls">
+    <label for="status-filter">Filtrar por Status:</label>
+    <select id="status-filter" (change)="onStatusChange($event)" [(ngModel)]="selectedStatus">
+      <option *ngFor="let status of statuses" [value]="status">{{ status }}</option>
+    </select>
+    <a routerLink="/cadastro" class="add-button">Adicionar Máquina</a>
+  </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Localização</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let machine of machines">
+          <td>{{ machine.name }}</td>
+          <td>{{ machine.location }}</td>
+          <td>{{ machine.status }}</td>
+          <td>
+            <a [routerLink]="['/detalhes', machine.id]">Ver Detalhes</a>
+          </td>
+        </tr>
+        <tr *ngIf="machines.length === 0">
+          <td colspan="4" class="no-data">Nenhuma máquina encontrada.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
